@@ -9,8 +9,11 @@ Website colors
 
 .header {
     overflow: hidden;
-    position: sticky;
-    top: 0;
+    top: 10px;
+    background-color: aquamarine;
+    padding: 5px;
+    border-radius: 16px;
+    margin: 10px;
   }
   
   .header a {
@@ -51,9 +54,24 @@ Website colors
     color: #0c1618ff;
   }
 
-.immagebox{
+/*Sets anything labled "body" to have that background color*/
+body{
+  /*Cite Background Info*/
+  background-image: url("images/output-onlinepngtools (1).png");
+  background-repeat: no-repeat; /*Stops the background from repeating if the background does not fill the page*/
+  background-attachment: fixed; /*Makes the background streatch to the end of the page and not move with the page*/
+  background-position: center; /*Centers the immage*/
+  background-size: cover; /*Makes the background size shift as needed*/
+
+  /*background-color: rgb(133, 133, 133); /*Can use names, Hexadecimal, RGB, or RGBA values for any and all colors*/
+  /*background: linear-gradient(to left, rgb(122, 212, 69), rgb(29, 97, 139)); /*Makes the background have a linear gradient from blue to green*/
+  padding: 10px;
+}
+
+.headlinebox { /* Box that all the Headline elements are in*/
+    margin: 10px; /* Gives items space between*/
+    width:  -10px;
     border: 10px;
-    width: 90%;
     height: 500px;
     padding: 10px;
     object-fit: contain;
@@ -63,22 +81,234 @@ Website colors
     display: flex;
   }
 
-.leftimmagebox img {
-    padding: 10px;
+.leftheadlinebox { /* Left side of the box that all the Headline elements are in*/
+    border-radius: 8px;
     width:  100%;
-    height: 80%;
+    height: 100%;
     object-fit: contain;
     display: inline-block;
   }
-  
-.righttextbox {
-  width:  30%;
+.leftheadlinebox img {
+  border-radius: 8px;
+  width:  100%;
   height: 100%;
-  padding: 10px;
-  float: right;
+  object-fit: cover;
   display: inline-block;
 }
-
-
-
   
+.centerheadlinebox { /* Center side of the box that all the Headline elements are in*/
+    border-radius: 8px;
+    width:  100%;
+    height: 100%;
+    display: inline-block;
+    object-fit: fill;
+  }
+
+.rightheadlinebox { /* Rignt side of the box that all the Headline elements are in*/
+  width:  100%;
+  height: 100%;
+  padding: 10px;
+  display: inline-block;
+  object-fit: contain;
+}
+
+.rightheadlinebox p { /* Rignt side of the box that all the Headline elements are in*/
+  width:  100%;
+  padding: 10px;
+  font-size: x-large;
+  display: inline-block;
+  justify-content: center; /* Horizontal center */
+  align-items: center;     /* Vertical center */
+  object-fit: contain;
+}
+
+.rightheadlinebox h1 { /* Rignt side of the box that all the Headline elements are in*/
+  width:  -10px;
+  height: 10%;
+  padding: 10px;
+  font-style: bolder;
+  font-size: 50px;
+  display: inline-block;
+  justify-content: center; /* Horizontal center */
+  align-items: center;     /* Vertical center */
+  object-fit: contain;
+
+}
+
+.contentbox {
+  margin: 10px; /* Gives items space between*/
+  width: -10px;
+  border: 10px;
+  height: 500px;
+  padding: 10px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center; /* Horizontal center */
+  align-items: center;     /* Vertical center */
+  overflow: clip;
+
+}
+
+.contentbox img {
+  border-radius: 8px;
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  overflow: clip;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center; /* Horizontal center */
+  align-items: center;     /* Vertical center */
+}
+
+.contentbox h4 {
+  font-style: bolder;
+  font-size: 20px;
+  display: flex;
+  justify-content: center; /* Horizontal center */
+  align-items: center;     /* Vertical center */}
+
+.contentbox p {
+  font-style: bolder;
+  font-size: medium;
+  display: flex;
+  justify-content: center; /* Horizontal center */
+  align-items: center;     /* Vertical center */
+}
+
+.rightcontentbox{ /* Right side of the box that holds content elements*/
+  margin: 10px; /* Gives items space between*/
+  width: 30%;
+  height: 500px;
+  padding: 10px;
+  display: inline-block;
+  object-fit: contain;
+  background-color: rgb(216, 150, 64);
+  border-radius: 16px;
+}
+
+.centercontentbox{ /* Center side of the box that holds content elements*/
+  margin: 10px; /* Gives items space between*/
+  width: 30%;
+  height: 500px;
+  padding: 10px;
+  display: inline-block;
+  object-fit: contain;
+  background-color: rgb(232, 202, 161);
+  border-radius: 16px;
+}
+
+.leftcontentbox{ /* Left side of the box that holds content elements*/
+  margin: 10px; /* Gives items space between*/
+  width: 30%;
+  height: 500px;
+  padding: 10px;
+  display: inline-block;
+  object-fit: contain;
+  background-color: antiquewhite;
+  border-radius: 16px;
+}
+
+footer {
+  top: 10px;
+  width: 100%;
+  background-color: dimgray;
+}
+
+footer button{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+footer button image{
+  width: 50px;
+  height: 50px;
+  object-fit: fill;
+}
+/*https://uiverse.io/david-mohseni/brave-shrimp-86*/
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #fff;
+}
