@@ -10,14 +10,16 @@ Website colors
 .header {
     overflow: hidden;
     top: 10px;
-    background-color: aquamarine;
+    background-color: rgba(255, 145, 0, 0.816);
     padding: 5px;
     border-radius: 16px;
+    border: #0000004e;
     margin: 10px;
   }
   
   .header a {
     float: left;
+    font-family: "Sekuya", system-ui;
     color: #0c1618ff;
     text-align: center;
     padding: 14px 16px;
@@ -37,6 +39,7 @@ Website colors
 
   .header b {
     float: right;
+    font-family: "Roboto", sans-serif;
     color: #0c1618ff;
     text-align: center;
     padding: 14px 16px;
@@ -62,9 +65,7 @@ body{
   background-attachment: fixed; /*Makes the background streatch to the end of the page and not move with the page*/
   background-position: center; /*Centers the immage*/
   background-size: cover; /*Makes the background size shift as needed*/
-
-  /*background-color: rgb(133, 133, 133); /*Can use names, Hexadecimal, RGB, or RGBA values for any and all colors*/
-  /*background: linear-gradient(to left, rgb(122, 212, 69), rgb(29, 97, 139)); /*Makes the background have a linear gradient from blue to green*/
+  font-family: "PT Serif", serif;
   padding: 10px;
 }
 
@@ -174,6 +175,7 @@ body{
   display: flex;
   justify-content: center; /* Horizontal center */
   align-items: center;     /* Vertical center */
+  text-align: center;
 }
 
 .rightcontentbox{ /* Right side of the box that holds content elements*/
@@ -212,7 +214,9 @@ body{
 footer {
   top: 10px;
   width: 100%;
-  background-color: dimgray;
+  text-align: center;
+  font: 22px;
+  background-color: hsla(0, 0%, 41%, 0.8);
 }
 
 footer button{
@@ -226,12 +230,13 @@ footer button image{
   height: 50px;
   object-fit: fill;
 }
+
 /*https://uiverse.io/david-mohseni/brave-shrimp-86*/
 .wrapper {
   display: inline-flex;
   list-style: none;
   height: 120px;
-  width: 100%;
+  width: 90%;
   padding-top: 40px;
   font-family: "Poppins", sans-serif;
   justify-content: center;
@@ -292,23 +297,39 @@ footer button image{
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
 
-.wrapper .facebook:hover,
-.wrapper .facebook:hover .tooltip,
-.wrapper .facebook:hover .tooltip::before {
-  background: #1877f2;
+.wrapper .itchio:hover,
+.wrapper .itchio:hover .tooltip,
+.wrapper .itchio:hover .tooltip::before {
+  background: #fa5c5c;
   color: #fff;
 }
 
-.wrapper .twitter:hover,
-.wrapper .twitter:hover .tooltip,
-.wrapper .twitter:hover .tooltip::before {
-  background: #1da1f2;
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background: #CD201F;
   color: #fff;
 }
 
-.wrapper .instagram:hover,
-.wrapper .instagram:hover .tooltip,
-.wrapper .instagram:hover .tooltip::before {
-  background: #e4405f;
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+  background: #0077B5;
   color: #fff;
+}
+.wrapper .icon a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.wrapper .icon a:visited {
+  color: inherit;
+}
+
+.wrapper .icon a:hover {
+  color: inherit;
+}
+
+.wrapper .icon a:active {
+  color: inherit;
 }
