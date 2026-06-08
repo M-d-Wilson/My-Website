@@ -17,7 +17,7 @@ Website colors
     margin: 10px;
   }
   
-  .header a {
+  .header h1, h1:visited{
     float: left;
     font-family: "Sekuya", system-ui;
     color: #0c1618ff;
@@ -27,17 +27,17 @@ Website colors
     font-size: 18px;
   }
   
-  .header a.hover {
+  .header h1.hover {
     background-color: #ff0022c7;
-    color: black;
+    color: inherit;
   }
   
-  .header a.active {
+  .header h1.active {
     background-color: #ff002250;
-    color: #0c1618ff;
+    color: inherit;
   }
 
-  .header b {
+  .header h2 {
     float: right;
     font-family: "Roboto", sans-serif;
     color: #0c1618ff;
@@ -47,14 +47,19 @@ Website colors
     font-size: 18px;
   }
   
-  .header b:hover {
+  .header h2:hover {
     background-color: #ff0022c7;
     color: black;
   }
   
-  .header b.active {
+  .header h2.active {
     background-color: #ff002250;
     color: #0c1618ff;
+  }
+
+  .header a, a:visited, a:hover, a:focus, a:active {
+    color: inherit;
+    text-decoration: none;
   }
 
 /*Sets anything labled "body" to have that background color*/
@@ -80,7 +85,33 @@ body{
     overflow: hidden; 
     border-radius: 16px;
     display: flex;
-  }
+}
+
+.aboutmeleft{
+  margin: 10px; /* Gives items space between*/
+  width:  -10px;
+  border: 10px;
+  height: 500px;
+  padding: 10px;
+  object-fit: contain;
+  background-color: #fc9f5bff;
+  overflow: hidden; 
+  border-radius: 16px;
+  display: flex;
+}
+
+.aboutmeright{
+  margin: 10px; /* Gives items space between*/
+  width:  -10px;
+  border: 10px;
+  height: 500px;
+  padding: 10px;
+  object-fit: contain;
+  background-color: #fc9f5bff;
+  overflow: hidden; 
+  border-radius: 16px;
+  display: flex;
+}
 
 .leftheadlinebox { /* Left side of the box that all the Headline elements are in*/
     border-radius: 8px;
@@ -89,13 +120,36 @@ body{
     object-fit: contain;
     display: inline-block;
   }
-.leftheadlinebox img {
-  border-radius: 8px;
-  width:  100%;
-  height: 100%;
-  object-fit: cover;
-  display: inline-block;
-}
+
+  .leftheadlinebox p { /* Rignt side of the box that all the Headline elements are in*/
+    width:  100%;
+    padding: 10px;
+    font-size: x-large;
+    display: inline-block;
+    justify-content: center; /* Horizontal center */
+    align-items: center;     /* Vertical center */
+    object-fit: contain;
+  }
+
+  .leftheadlinebox h1 { /* Rignt side of the box that all the Headline elements are in*/
+    width:  -10px;
+    height: 10%;
+    padding: 10px;
+    font-style: bolder;
+    font-size: 50px;
+    display: inline-block;
+    justify-content: center; /* Horizontal center */
+    align-items: center;     /* Vertical center */
+    object-fit: contain;
+
+  }
+  .leftheadlinebox img {
+    border-radius: 8px;
+    width:  100%;
+    height: 100%;
+    object-fit: cover;
+    display: inline-block;
+  }
   
 .centerheadlinebox { /* Center side of the box that all the Headline elements are in*/
     border-radius: 8px;
@@ -113,29 +167,36 @@ body{
   object-fit: contain;
 }
 
-.rightheadlinebox p { /* Rignt side of the box that all the Headline elements are in*/
-  width:  100%;
-  padding: 10px;
-  font-size: x-large;
-  display: inline-block;
-  justify-content: center; /* Horizontal center */
-  align-items: center;     /* Vertical center */
-  object-fit: contain;
-}
+  .rightheadlinebox p { /* Rignt side of the box that all the Headline elements are in*/
+    width:  100%;
+    padding: 10px;
+    font-size: x-large;
+    display: inline-block;
+    justify-content: center; /* Horizontal center */
+    align-items: center;     /* Vertical center */
+    object-fit: contain;
+  }
 
-.rightheadlinebox h1 { /* Rignt side of the box that all the Headline elements are in*/
-  width:  -10px;
-  height: 10%;
-  padding: 10px;
-  font-style: bolder;
-  font-size: 50px;
-  display: inline-block;
-  justify-content: center; /* Horizontal center */
-  align-items: center;     /* Vertical center */
-  object-fit: contain;
+  .rightheadlinebox h1 { /* Rignt side of the box that all the Headline elements are in*/
+    width:  -10px;
+    height: 10%;
+    padding: 10px;
+    font-style: bolder;
+    font-size: 50px;
+    display: inline-block;
+    justify-content: center; /* Horizontal center */
+    align-items: center;     /* Vertical center */
+    object-fit: contain;
 
-}
+  }
 
+  .rightheadlinebox img {
+    border-radius: 8px;
+    width:  100%;
+    height: 100%;
+    object-fit: cover;
+    display: inline-block;
+  }
 .contentbox {
   margin: 10px; /* Gives items space between*/
   width: -10px;
@@ -176,6 +237,7 @@ body{
   justify-content: center; /* Horizontal center */
   align-items: center;     /* Vertical center */
   text-align: center;
+
 }
 
 .rightcontentbox{ /* Right side of the box that holds content elements*/
@@ -187,6 +249,12 @@ body{
   object-fit: contain;
   background-color: rgb(216, 150, 64);
   border-radius: 16px;
+}
+.rightcontentbox p{
+  font-size: small;
+}
+.rightcontentbox h1{
+  font-size: medium;
 }
 
 .centercontentbox{ /* Center side of the box that holds content elements*/
@@ -210,28 +278,23 @@ body{
   background-color: antiquewhite;
   border-radius: 16px;
 }
-
+.leftcontentbox p{
+  font-size: small;
+}
+.leftcontentbox h1{
+  font-size: medium;
+}
 footer {
   top: 10px;
   width: 100%;
   text-align: center;
   font: 22px;
-  background-color: hsla(0, 0%, 41%, 0.8);
+  background-color: rgba(255, 235, 205, 0.715);
+  color: black;
 }
 
-footer button{
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-}
 
-footer button image{
-  width: 50px;
-  height: 50px;
-  object-fit: fill;
-}
-
-/*https://uiverse.io/david-mohseni/brave-shrimp-86*/
+/* Got code from https://uiverse.io/david-mohseni/brave-shrimp-86 */
 .wrapper {
   display: inline-flex;
   list-style: none;
