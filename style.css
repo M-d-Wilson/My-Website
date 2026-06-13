@@ -17,7 +17,6 @@ Website colors
     border: #0000004e;
     margin: 10px;
   }
-  
   .header h1, h1:visited{
     float: left;
     font-family: "Sekuya", system-ui;
@@ -27,17 +26,14 @@ Website colors
     text-decoration: none;
     font-size: 18px;
   }
-  
   .header h1.hover {
     background-color: #ff0022c7;
     color: inherit;
   }
-  
   .header h1.active {
     background-color: #ff002250;
     color: inherit;
   }
-
   .header h2 {
     float: right;
     font-family: "Roboto", sans-serif;
@@ -47,17 +43,14 @@ Website colors
     text-decoration: none;
     font-size: 18px;
   }
-  
   .header h2:hover {
     background-color: #ff0022c7;
     color: black;
   }
-  
   .header h2.active {
     background-color: #ff002250;
     color: #0c1618ff;
   }
-
   .header a, a:visited, a:hover, a:focus, a:active {
     color: inherit;
     text-decoration: none;
@@ -95,7 +88,6 @@ body{
   object-fit: contain;
   display: inline-block;
 }
-
 .leftheadlinebox p { /* Rignt side of the box that all the Headline elements are in*/
   width:  100%;
   padding: 10px;
@@ -105,7 +97,6 @@ body{
   align-items: center;     /* Vertical center */
   object-fit: contain;
 }
-
 .leftheadlinebox h1 { /* Rignt side of the box that all the Headline elements are in*/
   width:  -10px;
   height: 10%;
@@ -118,7 +109,6 @@ body{
   object-fit: contain;
 
 }
-
 .leftheadlinebox img {
   border-radius: 8px;
   width:  100%;
@@ -126,6 +116,7 @@ body{
   object-fit: cover;
   display: inline-block;
 }
+
 .centerheadlinebox { /* Center side of the box that all the Headline elements are in*/
   border-radius: 8px;
   width:  100%;
@@ -141,7 +132,6 @@ padding: 10px;
 display: inline-block;
 object-fit: contain;
 }
-
 .rightheadlinebox p { /* Rignt side of the box that all the Headline elements are in*/
   width:  100%;
   padding: 10px;
@@ -151,7 +141,6 @@ object-fit: contain;
   align-items: center;     /* Vertical center */
   object-fit: contain;
 }
-
 .rightheadlinebox h1 { /* Rignt side of the box that all the Headline elements are in*/
   width:  -10px;
   height: 10%;
@@ -164,7 +153,6 @@ object-fit: contain;
   object-fit: contain;
 
 }
-
 .rightheadlinebox img {
   border-radius: 8px;
   width:  100%;
@@ -222,7 +210,6 @@ footer {
   overflow: clip;
 
 }
-
 .contentbox img {
   border-radius: 8px;
   width: 100%;
@@ -234,7 +221,6 @@ footer {
   justify-content: center; /* Horizontal center */
   align-items: center;     /* Vertical center */
 }
-
 .contentbox h4 {
   font-style: bolder;
   font-size: 20px;
@@ -310,12 +296,10 @@ footer {
   align-items: center;
 
 }
-
 .skillblocks div {
   display: flex;
   align-items: center;
 }
-
 .skillblocks img{
   display: inline-block;
   object-fit:contain;
@@ -323,7 +307,6 @@ footer {
   height: 50px;
   margin: 5px;
 }
-
 .skillblocks h3{
   flex: 1;
   display: inline-block;
@@ -334,27 +317,31 @@ footer {
   width: max-content-50;
   height: 25px;
 }
-
 .skillblocks p{
   margin: 5px;
 }
 
 /* --------- Project archive --------- */
 .project{
+  justify-content:center;
   width: 80%;
 }
-
-.project li{
+.project div{
+  align-items: center;
+  justify-content: center;
+}
+.project image{
+  width: 10%;
+  height: 10%;
+}
+.project p {
+  justify-content: center;
   align-items: center;
 }
-
 .project ul {
   display: grid;
-  justify-content: center;
   margin: 5%;
 }
-
-
 
 /* Got code from https://uiverse.io/david-mohseni/brave-shrimp-86 */
 .wrapper {
