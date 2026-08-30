@@ -1,0 +1,263 @@
+/* --------- Project archive --------- */
+.project{
+    justify-content:center;
+    border-radius: 16px;
+    border: 3px solid;
+    background-color: #fc9f5bff;
+    max-width: 75%;
+    margin: 10px auto;
+  }
+  .project div{
+    margin: 5px;
+    justify-content: center;
+  }
+  .project summary{
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+  }
+  .project details{
+    margin: 5px;
+    padding: 15px;
+  }
+  .project img{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: 10%;
+    border-radius: 8px;
+  }
+  .project p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+  .project h3{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .project ul {
+    display: grid;
+    margin: 5%;
+  }
+  .project iframe{
+    display: flex;
+    border-radius: 8px;
+    border: solid 1px;
+    margin-left: 10%;
+    width: 100vh;
+    height: 60vh;
+  }
+  .project a{
+    color: inherit;
+    text-decoration: none;
+  }
+
+/* --------- Mobile --------- */
+@media (max-width: 768px) {
+    /* --------- Mobile About Me Adjustments --------- */
+    .project{
+        max-width: 90%;
+    }
+    .project img{
+        width: 100%;
+    }
+    .project p{
+        font-size: 12px;
+    }
+    .project h3{
+        font-size: 12px;
+    }
+    /* --------- Mobile Header Adjustments --------- */
+
+    .header h1 {
+      font-size: 28px;
+      float: none;
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 5px;
+      font-size: clamp(22px, 5vw, 36px);
+    }
+    .header h2 {
+      float: none;
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 5px;
+      font-size: 20px;
+    }
+  }
+/* --------- Header, Footer, and Body --------- */
+.header {
+    overflow: hidden;
+    top: 10px;
+    background-color: rgba(255, 145, 0, 0.816);
+    padding: 5px;
+    border-radius: 16px;
+    border: #0c1618ff;
+    margin: 10px;
+  }
+  .header h1, h1:visited{
+    float: left;
+    font-family: "Sekuya", system-ui;
+    color: #0c1618ff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .header h1.hover {
+    background-color: #ff0022c7;
+    color: inherit;
+  }
+  .header h1.active {
+    background-color: #ff002250;
+    color: inherit;
+  }
+  .header h2 {
+    float: right;
+    font-family: "Roboto", sans-serif;
+    color: #0c1618ff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .header h2:hover {
+    background-color: #ff0022c7;
+    color: black;
+  }
+  .header h2.active {
+    background-color: #ff002250;
+    color: #0c1618ff;
+  }
+  .header a, a:visited, a:hover, a:focus, a:active {
+    color: inherit;
+    text-decoration: none;
+  }
+
+/*Sets anything labled "body" to have that background color*/
+body{
+  /*Cite Background Info*/
+  background-image: url("images/output-onlinepngtools (1).png");
+  background-repeat: no-repeat; /*Stops the background from repeating if the background does not fill the page*/
+  background-attachment: fixed; /*Makes the background streatch to the end of the page and not move with the page*/
+  background-position: center; /*Centers the immage*/
+  background-size: cover; /*Makes the background size shift as needed*/
+  font-family: "PT Serif", serif;
+  padding: 10px;
+}
+
+footer {
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    font: 22px;
+    background-color: rgba(255, 235, 205, 0.715);
+    color: black;
+  }
+
+
+/* Got code from https://uiverse.io/david-mohseni/brave-shrimp-86 */
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+    width: 100%;
+    padding: 40px;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    justify-content: center;
+}
+  .wrapper .icon {
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  .wrapper .itchio:hover,
+  .wrapper .itchio:hover .tooltip,
+  .wrapper .itchio:hover .tooltip::before {
+    background: #fa5c5c;
+    color: #fff;
+  }
+  .wrapper .youtube:hover,
+  .wrapper .youtube:hover .tooltip,
+  .wrapper .youtube:hover .tooltip::before {
+    background: #CD201F;
+    color: #fff;
+  }
+  .wrapper .linkedin:hover,
+  .wrapper .linkedin:hover .tooltip,
+  .wrapper .linkedin:hover .tooltip::before {
+    background: #0077B5;
+    color: #fff;
+  }
+  
+  .wrapper .github:hover,
+  .wrapper .github:hover .tooltip,
+  .wrapper .github:hover .tooltip::before {
+    background: #8534F3;
+    color: #fff;
+  }
+  .wrapper .icon a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .wrapper .icon a:visited {
+    color: inherit;
+  }
+  .wrapper .icon a:hover {
+    color: inherit;
+  }
+  .wrapper .icon a:active {
+    color: inherit;
+  }
+  

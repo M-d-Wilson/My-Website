@@ -1,18 +1,5 @@
 /* --------- About Me --------- */
 
-.headlinebox { /* Box that all the Headline elements are in*/
-    margin: 10px; /* Gives items space between*/
-    width:  -10px;
-    border: 10px;
-    height: 500px;
-    padding: 10px;
-    object-fit: contain;
-    background-color: #fc9f5bff;
-    overflow: hidden; 
-    border-radius: 16px;
-    display: flex;
-}
-
 .leftheadlinebox { /* Left side of the box that all the Headline elements are in*/
     border-radius: 8px;
     width:  100%;
@@ -23,10 +10,10 @@
     margin: auto;
 }
 .leftheadlinebox p { /* Rignt side of the box that all the Headline elements are in*/
-  width:  90%;
+  width:  100%;
   max-height: 80%;
-  padding: 10px;
-  font-size: clamp(.5rem, 2vw, 1.4rem);
+  padding: 10px, 10px;
+  font-size: 30px;
   display: block;
   justify-content: center; /* Horizontal center */
   align-items: center;     /* Vertical center */
@@ -34,30 +21,20 @@
 }
 .leftheadlinebox h1 { /* Rignt side of the box that all the Headline elements are in*/
     width: 100%;
-    max-height: 20%;
     margin: 0;
-    padding: 10px;
-    font-size: clamp(2rem, 5vw, 3rem);
+    padding: 10px, 10px;
+    font-size: 42px;
     text-align: center;
     box-sizing: border-box;
 
 }
 .leftheadlinebox img {
     border-radius: 8px;
-    border: 3px solid;
     width:  100%;
     height: 100%;
     object-fit: cover;
     display: block;
     margin: 0 auto;
-}
-
-.centerheadlinebox { /* Center side of the box that all the Headline elements are in*/
-  border-radius: 8px;
-  width:  100%;
-  height: 100%;
-  display: inline-block;
-  object-fit: fill;
 }
 
 .rightheadlinebox { /* Rignt side of the box that all the Headline elements are in*/
@@ -72,8 +49,9 @@
 .rightheadlinebox p { /* Rignt side of the box that all the Headline elements are in*/
   width:  95%;
   max-height: 80%;
-  padding: 10px;
-  font-size: clamp(.5rem, 2vw, 1.4rem);
+  margin-left: 10px;
+  padding: 10px, 10px;
+  font-size: 30px;
   display: block;
   justify-content: center; /* Horizontal center */
   align-items: center;     /* Vertical center */
@@ -82,15 +60,14 @@
 .rightheadlinebox h1 { /* Rignt side of the box that all the Headline elements are in*/
     width: 100%;
     margin: 0;
-    padding: 10px;
-    font-size: clamp(2rem, 5vw, 3rem);
+    padding: 10px, 10px;
+    font-size: 42px;
     text-align: center;
     box-sizing: border-box;
 
 }
 .rightheadlinebox img {
   border-radius: 8px;
-  border: 3px solid;
   width:  100%;
   height: 100%;
   object-fit: cover;
@@ -102,13 +79,11 @@
     margin: 10px; /* Gives items space between*/
     width:  -10px;
     border-radius: 8px;
-    border: 3px solid;
     height: auto;
     padding: 10px;
     object-fit: fill;
     background-color: #fc9f5bff;
     overflow: auto; 
-    border-radius: 16px;
     display: flex;
   }
   
@@ -116,146 +91,46 @@
     margin: 10px; /* Gives items space between*/
     width:  -10px;
     border-radius: 8px;
-    border: 3px solid;
     height: auto;
     padding: 10px;
     object-fit: fill;
     background-color: #fc9f5bff;
     overflow: hidden; 
-    border-radius: 16px;
     display: flex;
-  }
-  
-  .contentbox {
-    margin: 10px; /* Gives items space between*/
-    width: -10px;
-    border: 10px;
-    height: 500px;
-    padding: 10px;
-    border-radius: 16px;
-    display: flex;
-    justify-content: center; /* Horizontal center */
-    align-items: center;     /* Vertical center */
-    overflow: clip;
-  
-  }
-  .contentbox img {
-    border-radius: 8px;
-    width: 100%;
-    height: 70%;
-    object-fit: cover;
-    overflow: clip;
-    border-radius: 16px;
-    display: flex;
-    justify-content: center; /* Horizontal center */
-    align-items: center;     /* Vertical center */
-  }
-  .contentbox h4 {
-    color: #0c1618ff;
-    text-decoration: none;
-    font-style: bolder;
-    font-size: 20px;
-    display: flex;
-    justify-content: center; /* Horizontal center */
-    align-items: center;     /* Vertical center */
-  
-  }
-  
-  .contentbox p {
-    color: #0c1618ff;
-    text-decoration: none;
-    font-style: bolder;
-    font-size: medium;
-    display: flex;
-    justify-content: center; /* Horizontal center */
-    align-items: center;     /* Vertical center */
-    text-align: center;
-  
-  }
-  .contentbox a{
-    color: #0c1618ff;
-    text-decoration: none;
-  }
-  
-  .rightcontentbox{ /* Right side of the box that holds content elements*/
-    margin: 10px; /* Gives items space between*/
-    width: 30%;
-    height: 500px;
-    padding: 10px;
-    display: inline-block;
-    object-fit: contain;
-    background-color: rgb(216, 150, 64);
-    border-radius: 16px;
-  }
-  .rightcontentbox p{
-    font-size: small;
-  }
-  .rightcontentbox h1{
-    font-size: medium;
-    height: auto;
-  }
-  
-  .centercontentbox{ /* Center side of the box that holds content elements*/
-    margin: 10px; /* Gives items space between*/
-    width: 30%;
-    height: 500px;
-    padding: 10px;
-    display: inline-block;
-    object-fit: contain;
-    background-color: rgb(232, 202, 161);
-    border-radius: 16px;
-  }
-  
-  .leftcontentbox{ /* Left side of the box that holds content elements*/
-    margin: 10px; /* Gives items space between*/
-    width: 30%;
-    height: 500px;
-    padding: 10px;
-    display: inline-block;
-    object-fit: contain;
-    background-color: antiquewhite;
-    border-radius: 16px;
-  }
-  .leftcontentbox p{
-    font-size: small;
-  }
-  .leftcontentbox h1{
-    font-size: medium;
-  }
-  
+  }  
 
 /* --------- Mobile --------- */
 @media (max-width: 768px) {
     /* --------- Mobile About Me Adjustments --------- */
-    .rightheadlinebox img, .leftheadlinebox img {
-        border: 1px solid;
-    }
 
     .leftheadlinebox h1, .rightheadlinebox h1 { /* Rignt side of the box that all the Headline elements are in*/
-        font-size: 14px;    
+        font-size: 20px; 
+        font-weight: bold;   
     }
     .leftheadlinebox p, .rightheadlinebox p { /* Rignt side of the box that all the Headline elements are in*/
         font-size: 12px;
     }
 
     /* --------- Mobile Header Adjustments --------- */
+
     .header h1 {
-        font-size: 14px;
-        float: none;
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-        margin: 0;
-        padding: 5px;
+      font-size: 28px;
+      float: none;
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 5px;
+      font-size: clamp(22px, 5vw, 36px);
     }
     .header h2 {
-        font-size: 14px;
-        float: none;
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-        margin: 0;
-        padding: 5px;
+      float: none;
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 5px;
+      font-size: 20px;
     }
   }
 /* --------- Header, Footer, and Body --------- */
