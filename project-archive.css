@@ -143,7 +143,7 @@
 /*Sets anything labled "body" to have that background color*/
 body{
   /*Cite Background Info*/
-  background-image: url("images/output-onlinepngtools (1).png");
+  background-image: url("live-images/background-1.avif");
   background-repeat: no-repeat; /*Stops the background from repeating if the background does not fill the page*/
   background-attachment: fixed; /*Makes the background streatch to the end of the page and not move with the page*/
   background-position: center; /*Centers the immage*/
